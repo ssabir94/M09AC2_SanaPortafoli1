@@ -1,0 +1,128 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  /* FONS GENERAL*/
+  background-image:
+    linear-gradient(rgba(0,0,0,.20), rgba(0,0,0,.20)),
+    url("vector.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: #770f51; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Contenidor centrat */
+.contenidor { width: 90%; max-width: 1000px; margin: 0 auto; }
+
+
+header {
+  position: sticky; top: 0; z-index: 10;
+  color: #fff;
+  background-image:
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    url("electrico.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #222;
+}
+.brand { margin: 0; padding: 0.75rem 0; text-shadow: 0 1px 2px rgba(0,0,0,.6); }
+nav { padding: 0.25rem 0 0.6rem; }
+.menu { list-style: none; margin: 0; padding: 0; }
+.menu li { display: inline-block; margin-right: 0.5rem; }
+.menu a {
+  display: inline-block; padding: 0.4rem 0.6rem; border-radius: 6px;
+  color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.menu a:hover { background: rgba(255,255,255,.15); text-decoration: none; }
+
+
+.bloc { padding: 2rem 0; }
+.descripcio-seccio { color: #555; margin-top: -0.5rem; font-style: italic; }
+
+/* Caixeta clara per llegibilitat body */
+.bloc .contenidor{
+  background: rgba(255,255,255,.92);
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+
+.boto {
+  display: inline-block; background: #75184b; color: #fff;
+  padding: 0.6rem 0.9rem; border-radius: 8px; font-weight: bold;
+}
+.boto:hover { background: #6a9808; text-decoration: none; }
+
+
+.targeta {
+  display: inline-block; vertical-align: top; width: 300px;
+  border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden;
+  margin: 0 0.5rem 1rem 0; background: #fff;
+}
+.contingut-targeta { padding: 0.75rem 0.9rem; font-style: oblique; background-color: #e6ccdb; }
+.targeta h3 { margin: 0 0 0.25rem 0; font-size: 1.05rem; }
+.targeta p { margin: 0 0 0.5rem 0; color: #333; }
+.enllac { font-size: 0.95rem; }
+
+/* ===== Taula ===== */
+
+.taula { width: 100%; border-collapse: collapse; margin-top: 0.5rem; background-color: #fcd0eb; }
+.taula th, .taula td { border: 1px solid #ddd; padding: 0.5rem; text-align: left; }
+.taula thead th { background: #8d6982; color: #fff; }
+.taula tfoot td { font-size: 0.9rem; color: #555; }
+
+.taula .icona {
+  width: 64px;                 /* ample fix de la columna d’icones que sino se me vaaaan */
+  text-align: center;
+}
+.taula .icona img {
+  width: 40px;                 /* mida del logo */
+  height: 40px;
+  object-fit: contain;         /* no es deforma */
+  display: inline-block;
+}
+
+
+.formulari { max-width: 520px; }
+.formulari label { display: block; margin: 0.6rem 0 0.2rem; }
+.formulari input, .formulari textarea {
+  width: 100%; padding: 0.55rem; border: 1px solid #ccc; border-radius: 6px;
+  background-color: #e6ccdb;
+}
+.formulari button {
+  margin-top: 0.8rem; padding: 0.6rem 1rem; border: 0; background: #0a58ca;
+  color: #fff; border-radius: 8px; cursor: pointer;
+}
+.formulari button:hover { background: #084298; }
+
+
+footer {
+  border-top: 1px solid #e5e7eb;
+  color: #fff;
+  background-image:
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    url("electrico.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem 0;
+  font-size: 0.95rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+footer p { margin: 0; }
+footer a { color: #fff; text-decoration: underline; }
+footer a:hover { text-decoration: none; }
+
+
+@media (max-width: 640px) {
+  .menu li { display: block; margin: 0.25rem 0; }
+  .targeta { width: 100%; }
+  .bloc .contenidor { padding: 0.8rem; }
+}
+

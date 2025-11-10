@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primer Portafoli</title>
+  <link rel="stylesheet" href="estils.css">
+</head>
+<body>
+
+  <header>
+    <div class="contenidor">
+      <h1 class="brand">Sana Rut</h1>
+      <!-- Menú navegació -->
+      <nav>
+        <ul class="menu">
+          <li><a href="#inici">Inici</a></li>
+          <li><a href="#projectes">Projectes</a></li>
+          <li><a href="#habilitats">Habilitats</a></li>
+          <li><a href="#contacte">Contacte</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section id="inici" class="bloc">
+    <div class="contenidor">
+      <h2>Benvingudx! </h2>
+      <p>Et presento el meu portafoli. Sóc estudiant de 2n de DAW, així que encara estic una mica verda.
+      Et deixo per aquí alguns projectes ja realitzats, per a que ens anem coneixent!.</p>
+      <a class="boto" href="#projectes">Veure projectes</a>
+    </div>
+  </section>
+
+  
+  <section id="projectes" class="bloc">
+    <div class="contenidor">
+      <h2>Projectes 1r DAW</h2>
+      <p class="descripcio-seccio">Passi i vegi :D </p>
+
+      <div class="galeria">
+        <!-- Targeta 1 -->
+        <article class="targeta">
+          <img src="projecte1.jpg" alt="Projecte 1">
+          <div class="contingut-targeta">
+            <h3>Projecte 1: Calculadora</h3>
+            <p>Et presento a la meva calculadora. Per poder realitzar la tasca, vaig fer ús d'HTML, CSS i JS.
+              Li vaig afegir funcions de memòria i funcions complexes.
+          
+            </p>
+            <a class="enllac" href="#" target="_blank">Veure repositori</a>
+          </div>
+        </article>
+
+        <!-- Targeta 2 -->
+        <article class="targeta">
+          <img src="projecte2.jpg" alt="Projecte 2">
+          <div class="contingut-targeta">
+            <h3>Projecte 2: Cercador de Fàrmacs</h3>
+            <p>Haig d'admetre que amb aquest projecte vaig suar sang. Vaig fer ús d'HTML, CSS, JS i una API de fàrmacs.
+              La seva funció? Ajudar als tècnics/farmacèutics a extreure informació dels fàrmacs, a partir del CN (Codi Nacional).
+              En la meva opinió, és una bona idea. El problema? La seva implementació. Tant de bó poguès desenvolupar-ho per a que sigues totalment funcional...
+            </p>
+            <a class="enllac" href="#" target="_blank">Veure repositori</a>
+          </div>
+        </article>
+
+        <!-- Targeta 3 -->
+        <article class="targeta">
+          <img src="projecte3.jpg" alt="Projecte 3">
+          <div class="contingut-targeta">
+            <h3>Projecte 3: A jugar!</h3>
+            <p>Purament HTML i CSS. Va ser un projecte divertit. De què consta? El joc té un temporitzador.
+              Si fas click als lladres a temps, guanyes punts. Sino, s'acabarà la partida. 
+              El vaig fer tan complicat que no he pogut vencer a tots cap cop xD
+            </p>
+            <a class="enllac" href="#" target="_blank">Veure repositori</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projectes-2n" class="bloc">
+  <div class="contenidor">
+    <h2>Projectes 2n DAW</h2>
+    <p class="descripcio-seccio">A fotre canya!</p>
+
+    <div class="galeria">
+      <!-- Targeta Exercici 1 -->
+      <article class="targeta">
+        <img src="exercici1.png" alt="Miniatura Exercici 1 — Template">
+        <div class="contingut-targeta">
+          <h3>AC2 -> Exercici 1 : Template</h3>
+          <p>Replica de l'obra d'art del Maarc.</p>
+          <a class="enllac" href="./exercici1/index.html" target="_blank" rel="noopener">
+            Exercici 1 : Template
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+  </section>
+
+  <section id="habilitats" class="bloc">
+    <div class="contenidor">
+      <h2>Les meves habilitats</h2>
+      <p class="descripcio-seccio">Taula amb tecnologies que domino.</p>
+
+  <table class="taula">
+  <thead>
+    <tr>
+      <th>Icona</th>
+      <th>Tecnologia</th>
+      <th>Nivell</th>
+      <th>Observacions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="icona"><img src="logohtml.jpg" alt="Logo HTML"></td>
+      <td>HTML</td>
+      <td>Bàsic</td>
+      <td>Estructura semàntica, enllaços, taules</td>
+    </tr>
+    <tr>
+      <td class="icona"><img src="logocss.jpg" alt="Logo CSS"></td>
+      <td>CSS</td>
+      <td>Bàsic</td>
+      <td>Selectors, colors, padding/margin, posicions simples</td>
+    </tr>
+    <tr>
+      <td class="icona"><img src="logojs.jpg" alt="Logo JavaScript"></td>
+      <td>JavaScript</td>
+      <td>Bàsic</td>
+      <td>DOM bàsic</td>
+    </tr>
+    <tr>
+      <td class="icona"><img src="logophp.jpg" alt="Logo PHP"></td>
+      <td>PHP</td>
+      <td>Bàsic</td>
+      <td>Invocar, valors…</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+  
+  <section id="contacte" class="bloc">
+    <div class="contenidor">
+      <h2>Contacte</h2>
+      <form class="formulari" action="#" method="post">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" placeholder="El teu nom" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="correu@exemple.com" required>
+
+        <label for="missatge">Missatge</label>
+        <textarea id="missatge" name="missatge" rows="5" placeholder="Escriu el teu missatge..."></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="contenidor">
+      <p>&copy; 2025 · Sana Sabir· <a href="https://github.com/ssabir94" target="_blank">GitHub</a></p>
+    </div>
+  </footer>
+</body>
+</html>
